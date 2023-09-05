@@ -49,9 +49,6 @@ p {
 }
 
 main {
-    background-image: url(./images/bg-hero-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -319,9 +316,11 @@ ion-icon {
 }
 
 .attribution {
+    background-color: var(--neutral-darkCyan);
     font-size: 11px;
     text-align: center;
     color: white;
+    padding: 30px 0 10px 0;
 }
 
 .attribution a {
@@ -330,10 +329,7 @@ ion-icon {
 
 /* MEDIA STYLES */
 
-@media screen and (min-width: 630px) {
-    main {
-        background-image: url(./images/bg-hero-desktop.svg);
-    }
+/* @media screen and (min-width: 630px) {
 
     .hero-img {
         width: 70%;
@@ -386,14 +382,11 @@ ion-icon {
         margin-top: 10px;
         padding-bottom: 10px;
     }
-}
+} */
 
-@media screen and (min-width: 1185px) {
-    main {
-        background-image: url(./images/bg-hero-desktop.svg);
-    }
+@media screen and (min-width: 900px) {
 
-    header {
+/*     header {
         padding: 40px 70px;
     }
 
@@ -409,29 +402,38 @@ ion-icon {
     .hero {
         flex-direction: row;
         padding: 0 70px 50px 70px;
-    }
+    } */
 
-    .hero-text {
+    /* .hero-text {
         text-align: left;
         align-items: flex-start;
+    } */
+
+    .hero-text > p{
+        /* padding: 0px 470px; */
+        width: 40%;
     }
 
     .hero-img {
-        width: 130%;
+        width: 80%;
     }
+
+    .stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 250px;
+    }   
 
     section {
         flex-direction: row-reverse;
-        width: 88%;
+        padding: 0 100px;
     }
 
     .section-txt {
         text-align: left;
         padding: 0 180px 0 70px;
-    }
-
-    .img-section {
-        padding-bottom: 0px;
     }
 
     .flow {
@@ -443,10 +445,56 @@ ion-icon {
         padding: 0 0px 0 100px;
     }
 
-    .float-card {
-        flex-direction: column;
-        width: 45%;
+    .ready-card{
+    display: flex;
+    flex-direction: column;
+    margin: -70px 0px 100px 0px;
+    padding: 0px 60px 100px 60px;
+}
 
-        bottom: 25em;
-    }
+.footer-wrapper {
+/*     background-image: url(./images/bg-footer-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 14%; */
+    width: 100%;
+}
+
+footer {
+    flex-direction: row-reverse;
+    padding: 0px 100px 0 100px;
+    gap: 30px;
+    justify-content: space-between;
+
+}
+
+.business-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0px;
+    /* padding: 0px 100px; */
+    width: 20%;
+}
+
+.newsletter {
+    /* display: flex;
+    flex-direction: column; */
+    width: 45%;
+    gap: 20px;
+}
+
+.newsletter > p{
+    padding-right: 200px;
+}
+
+form {
+    padding-top: 20px;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.newsletter>form>input[type=email] {
+    width: 350px;
+}
 }
