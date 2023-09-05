@@ -80,7 +80,8 @@ header > button {
 }
 
 header > button:hover {
-  color: rgb(151, 151, 151);
+  color: hsl(322, 96%, 81%);
+  border: 1px solid hsl(322, 96%, 81%);
   cursor: pointer;
 }
 
